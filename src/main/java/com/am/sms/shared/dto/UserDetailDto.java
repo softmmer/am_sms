@@ -2,6 +2,7 @@ package com.am.sms.shared.dto;
 
 import java.io.Serializable;
 
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,6 +10,8 @@ import lombok.Setter;
 @Getter
 public class UserDetailDto implements Serializable{
 
+	@Getter(value = AccessLevel.NONE)
+	@Setter(value = AccessLevel.NONE)
 	private static final long serialVersionUID = 2695940262429582663L;
 
 	private Long id;
@@ -20,5 +23,5 @@ public class UserDetailDto implements Serializable{
 	private String encryptedPassword;
 	private String emailVarificationToken;
 	private Boolean emailVarificationStatus=false;
-		
+
 }
