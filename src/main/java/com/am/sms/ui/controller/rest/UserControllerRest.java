@@ -1,4 +1,4 @@
-package com.am.sms.ui.controller;
+package com.am.sms.ui.controller.rest;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
